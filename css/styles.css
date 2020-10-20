@@ -1,10 +1,11 @@
 /* variables */
 :root {
-    --primary: #222a34;
+    --primary: #000000;
     --white: #ffffff;
     --description: #4f4f4f;
     --gray: #eeeeee;
-    --accent: #ffb902;
+    --accent: #F5761A;  /*logo color and nav bar color*/
+    --accent2: #9E4C11; /*used to show an "active state" on nav bar*/
     --shadow: rgb(0 0 0 / 0.12);
     -webkit-overflow-scrolling: touch;
 }
