@@ -159,7 +159,7 @@ nav {
     width: 100%;
     bottom: 0;
     padding: 2em;
-    background: var(--white);
+    background: var(--accent);
     box-shadow: 0 -3px 4px var(--shadow);
 }
 nav a:not(.active) {
