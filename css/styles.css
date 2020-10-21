@@ -216,22 +216,19 @@ nav {
     bottom: 0;
     padding: 1em;
     background: var(--accent);
+    background: var(--white);
     box-shadow: 0 -3px 4px var(--shadow);
 }
-nav.grid > *{
+nav.grid > *,
+.nav.grid > * {
     display: block;
     color: var(--primary);
 }
 nav img {
     width: 2em;
 }
-/*
-nav a:not(.active) {
+
+nav a:not(.active),
+.nav a:not(.active) {
     opacity: 0.25;
-}
-*/
-
-.active {
-    background: var(--accent2);
-
 }
