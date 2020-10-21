@@ -225,9 +225,11 @@ nav.grid > *{
 nav img {
     width: 2em;
 }
+/*
 nav a:not(.active) {
     opacity: 0.25;
 }
+*/
 
 .active {
     background: var(--accent2);
