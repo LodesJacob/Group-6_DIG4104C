@@ -214,9 +214,16 @@ nav {
     box-sizing: border-box;
     width: 100%;
     bottom: 0;
-    padding: 2em;
+    padding: 1em;
     background: var(--accent);
     box-shadow: 0 -3px 4px var(--shadow);
+}
+nav.grid > *{
+    display: block;
+    color: var(--primary);
+}
+nav img {
+    width: 2em;
 }
 nav a:not(.active) {
     opacity: 0.25;
