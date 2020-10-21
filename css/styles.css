@@ -185,3 +185,8 @@ nav {
 nav a:not(.active) {
     opacity: 0.25;
 }
+
+.active {
+    background: var(--accent2);
+
+}
