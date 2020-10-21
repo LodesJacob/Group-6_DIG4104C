@@ -48,6 +48,14 @@ a {
     color: var(--primary);
     text-decoration: none;
 }
+a {
+    font-style: italic;
+    color: var(--accent)
+}
+
+a * {
+    font-style: normal;
+}
 h1,
 h2,
 h3,
@@ -121,6 +129,18 @@ body.singleContent {
 /* content inside the main containers */
 img {
     max-width: 100%;
+}
+
+/* link to go back */
+.backLink {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background-color: var(--white);
+    height: 4em;
+    width: 4em;
+    border-radius: 2em;
+    overflow: hidden;
 }
 
 /* grids to space out elements horizontally */
