@@ -4,8 +4,8 @@
     --white: #ffffff;
     --description: #4f4f4f;
     --gray: #eeeeee;
-    --accent: #F5761A;  /*logo color and nav bar color*/
-    --accent2: #9E4C11; /*used to show an "active state" on nav bar*/
+    --accent: #f5761a; /*logo color and nav bar color*/
+    --accent2: #9e4c11; /*used to show an "active state" on nav bar*/
     --shadow: rgb(0 0 0 / 0.12);
     -webkit-overflow-scrolling: touch;
 }
@@ -50,7 +50,7 @@ a {
 }
 a {
     font-style: italic;
-    color: var(--accent)
+    color: var(--accent);
 }
 
 a * {
@@ -143,6 +143,22 @@ img {
     overflow: hidden;
 }
 
+/* progress bar */
+progress {
+    width: 100%;
+    height: 0.5em;
+    -webkit-appearance: none;
+    appearance: none;
+}
+progress::-webkit-progress-bar {
+    background-color: var(--gray);
+    border-radius: 3em;
+    overflow: hidden;
+}
+progress::-webkit-progress-value {
+    background-color: var(--accent)
+}
+
 /* grids to space out elements horizontally */
 .grid {
     display: grid;
@@ -150,6 +166,11 @@ img {
     align-content: center;
     text-align: center;
     column-gap: 0.5em;
+}
+.grid > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tiles {
     display: grid;
@@ -172,15 +193,37 @@ img {
     padding-bottom: 100%;
 }
 
+/* avatars */
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border-radius: 2em;
+    overflow: hidden;
+    padding: 0;
+}
+.avatar img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /* navigation */
 nav {
     position: fixed;
     box-sizing: border-box;
     width: 100%;
     bottom: 0;
-    padding: 2em;
+    padding: 1em;
     background: var(--accent);
     box-shadow: 0 -3px 4px var(--shadow);
+}
+nav.grid > *{
+    display: block;
+    color: var(--primary);
+}
+nav img {
+    width: 2em;
 }
 nav a:not(.active) {
     opacity: 0.25;
